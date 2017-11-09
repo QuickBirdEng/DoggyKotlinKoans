@@ -19,7 +19,6 @@ class SimpleDogClassTests {
     fun testMyNewDogClass() {
         // TODO TASK 4: 1. create a dog instance named "Bruno" with type "Labrador"
         // TODO TASK 4: 2. let him "bark" 3 times
-
-
+        throw NotImplementedError("Please implement the task :-)")
     }
 }
