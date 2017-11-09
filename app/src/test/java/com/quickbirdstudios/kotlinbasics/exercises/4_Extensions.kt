@@ -1,7 +1,7 @@
 package com.quickbirdstudios.kotlinbasics.exercises
+
 import com.quickbirdstudios.kotlinbasics.barkify
 import org.junit.Assert.assertEquals
-import org.junit.Assert.fail
 import org.junit.Test
 
 
@@ -18,8 +18,8 @@ class Extensions {
 
     // TODO TAKS 1 YOUR CODE END
 
-    //    TODO TASK 2 apply your extension to the "text"
-    private fun applyAllCapsExtension(text: String) {
+    // TODO TASK 2 apply your extension to the "text"
+    private fun applyAllCapsExtension(text: String): String {
         throw NotImplementedError("Please implement the task :-)")
     }
 
@@ -28,7 +28,7 @@ class Extensions {
 //        TODO TASK 3 use the both extenstions "barkfiy" and "scream" on this string
         val allCapsDogLanguage = "Ich habe ganz viel Hunger" // TODO <---- add here
 
-        assertEquals("WUFF WUFF WUFF WUFF WUFF!!!",allCapsDogLanguage)
+        assertEquals("WUFF WUFF WUFF WUFF WUFF!!!", allCapsDogLanguage)
     }
 
     @Test
