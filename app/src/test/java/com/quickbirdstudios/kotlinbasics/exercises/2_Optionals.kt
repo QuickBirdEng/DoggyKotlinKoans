@@ -48,6 +48,6 @@ class Optionals {
     @Test
     fun testSafeCasts() {
         assertEquals("Bruno", getNameOf(Dog("Bruno", "Labrador", 5)))
-        assertEquals("type unknown", getNameOf(Rect(1, 2, 3, 4)))
+        assertEquals("type unknown", getNameOf(1))
     }
 }
