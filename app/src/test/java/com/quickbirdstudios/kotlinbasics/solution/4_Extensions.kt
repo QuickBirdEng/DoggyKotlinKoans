@@ -1,4 +1,4 @@
-package com.quickbirdstudios.kotlinbasics.exercises.solution
+package com.quickbirdstudios.kotlinbasics.solution
 
 import com.quickbirdstudios.kotlinbasics.barkify
 import org.junit.Assert.assertEquals

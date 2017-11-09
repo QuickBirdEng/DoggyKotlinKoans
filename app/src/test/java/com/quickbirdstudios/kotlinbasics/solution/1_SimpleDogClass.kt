@@ -1,4 +1,4 @@
-package com.quickbirdstudios.kotlinbasics.exercises.solution
+package com.quickbirdstudios.kotlinbasics.solution
 
 import org.junit.Test
 
