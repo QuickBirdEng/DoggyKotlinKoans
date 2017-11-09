@@ -12,30 +12,30 @@ class Lambdas {
     private val dogs = listOf(Dog("Bruno", age = 4), Dog("Daisy", age = 12), Dog("Rex", age = 7))
 
     // TODO TASK 1 find and return a list of the names of all dogs using "map"
-    private fun findDogNames(): List<String> {
+    private fun findDogNames(dogs: List<Dog>): List<String> {
         throw NotImplementedError("Please implement the task :-)")
     }
 
-    // TODO TASK 2 find and return a list of all dogs that are older than 5 years using "filter"
-    private fun findOldDogs(): List<Dog> {
+    // TODO TASK 2 find and return a list of all dogs whose "age" is older than 5 years using "filter"
+    private fun findOldDogs(dogs: List<Dog>): List<Dog> {
         throw NotImplementedError("Please implement the task :-)")
     }
 
     // TODO TASK 3 COMBINE FILTER AND MAP: find and return a list of the NAMES of all dogs that are OLDER THAN 5
-    private fun findNamesOfOldDogs(): List<String> {
+    private fun findNamesOfOldDogs(dogs: List<Dog>): List<String> {
         throw NotImplementedError("Please implement the task :-)")
     }
 
     @Test
     fun testDogNamesUsingMap() {
-        val names = findDogNames()
+        val names = findDogNames(dogs)
 
         assertEquals(listOf("Bruno", "Daisy", "Rex"), names)
     }
 
     @Test
     fun testOldDogsUsingFilter() {
-        val oldDogs = findOldDogs()
+        val oldDogs = findOldDogs(dogs)
 
         for (dog in oldDogs) {
             assertTrue(dog.age > 5)
@@ -44,7 +44,7 @@ class Lambdas {
 
     @Test
     fun testFindNamesOfOldDogs() {
-        val oldDogNames = findNamesOfOldDogs()
+        val oldDogNames = findNamesOfOldDogs(dogs)
 
         assertEquals(listOf("Daisy", "Rex"), oldDogNames)
     }
