@@ -1,4 +1,4 @@
-package com.quickbirdstudios.kotlinbasics.exercises
+package com.quickbirdstudios.kotlinbasics.exercises.solution
 
 import com.quickbirdstudios.kotlinbasics.barkify
 import org.junit.Assert.assertEquals
@@ -14,29 +14,28 @@ class Extensions {
     // HINT use "test".toUpperCase() function on the string
     // TODO TASK 1 YOUR CODE BEGIN
 
+    fun String.scream() = this.toUpperCase() + "!!!"
 
     // TODO TAKS 1 YOUR CODE END
 
+
+
+
+
+
     // TODO TASK 2 apply your extension to the "text"
     private fun applyAllCapsExtension(text: String): String {
-        TODO("Please implement the task :-)")
+        return text.scream()
     }
 
     @Test
     fun testAllCapsDogLanguage() {
 //        TODO TASK 3 use the both extenstions "barkfiy" and "scream" on this string
-        val allCapsDogLanguage = "Ich habe ganz viel Hunger" // TODO <---- add here
+        val allCapsDogLanguage = "Ich habe ganz viel Hunger".barkify().scream() // TODO <---- add here
 
         assertEquals("WUFF WUFF WUFF WUFF WUFF!!!", allCapsDogLanguage)
     }
 
-
-
-
-
-    /*
-    Do not worry about the part below
-     */
     @Test
     fun testStringScream() {
         assertEquals("DOG!!!", applyAllCapsExtension("dog"))

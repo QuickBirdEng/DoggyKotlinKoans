@@ -1,4 +1,4 @@
-package com.quickbirdstudios.kotlinbasics.exercises
+package com.quickbirdstudios.kotlinbasics.exercises.solution
 
 import com.quickbirdstudios.kotlinbasics.Dog
 import org.junit.Assert.assertEquals
@@ -13,31 +13,22 @@ class Optionals {
 
     private fun letDogBark(dog: Dog?) {
 //      TODO TASK 1 call the function "bark" on the dog using the Safe Call Operator
-        TODO("Please implement the task :-)")
+        dog?.bark()
     }
 
     private fun getDogName(dog: Dog?): String {
 //      TODO TASK 2 return the DOG NAME if the dog is NOT null
 //      TODO TASK 2 return "No dog found" if the dog IS null
 //      HINT: use the Elvis operator "?:" )
-        TODO("Please implement the task :-)")
+       return dog?.name?:"No dog found"
     }
 
     private fun getNameOf(any: Any): String {
 //      TODO TASK 3 return the DOG NAME if it IS a dog. (HINT: use "as?"-cast or "is" check)
 //      TODO TASK 3 if it is NOT a dog, return "type unknown"
-        TODO("Please implement the task :-)")
+        return (any as? Dog)?.name ?: "type unknown"
     }
 
-
-
-
-
-
-
-    /*
-    Do not worry about the part below!
-     */
     @Test
     fun testKotlinMakesDogAccessSafer() {
         letDogBark(null)
@@ -56,6 +47,6 @@ class Optionals {
     @Test
     fun testSafeCasts() {
         assertEquals("Bruno", getNameOf(Dog("Bruno", "Labrador", 5)))
-        assertEquals("type unknown", getNameOf("JUST A STRING. NOT A DOG"))
+        assertEquals("type unknown", getNameOf("Just a String"))
     }
 }

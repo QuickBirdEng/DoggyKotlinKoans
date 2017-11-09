@@ -1,4 +1,4 @@
-package com.quickbirdstudios.kotlinbasics.exercises
+package com.quickbirdstudios.kotlinbasics.exercises.solution
 
 import com.quickbirdstudios.kotlinbasics.Dog
 import org.junit.Assert.assertEquals
@@ -13,7 +13,7 @@ class ControlFlow {
     //  TODO -> if the name is "Ignatz", return the owner name "Peter"
     //  TODO -> otherwise return null
     fun findDogOwnerName(dog: Dog): String? {
-        TODO("Please implement the task :-)")
+        throw NotImplementedError("Please implement the task :-)")
     }
 
     //  TODO TASK 2 using the "when" operator on the "dog.age", return:
@@ -22,16 +22,9 @@ class ControlFlow {
     //  HINT: use the range oprator "x..y" and "in" keyword
     //  TODO -> "Old Dog" otherwise
     fun ageToString(dog: Dog): String {
-        TODO("Please implement the task :-)")
+        throw NotImplementedError("Please implement the task :-)")
     }
 
-
-
-
-
-    /*
-    Do not worry about the part belwo
-     */
     @Test
     fun testOwnerNameIsCorrect() {
         assertEquals("Baby Dog", ageToString(Dog("Bruno",age = 1)))
