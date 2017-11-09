@@ -18,8 +18,9 @@ class Optionals {
     }
 
     private fun getDogName(dog: Dog?): String {
-//      TODO TASK 2 return the DOG NAME if the dog is NOT null (HINT: use Elvis operator "?:" )
+//      TODO TASK 2 return the DOG NAME if the dog is NOT null
 //      TODO TASK 2 return "No dog found" if the dog IS null
+//      HINT: use the Elvis operator "?:" )
         throw NotImplementedError("Please implement the task :-)")
     }
 
@@ -45,7 +46,7 @@ class Optionals {
 
     @Test
     fun testDogGetsIntroducedCorrectlyWhenNotNull() {
-        assertEquals("My name is Bruno", getDogName(Dog("Bruno")))
+        assertEquals("Bruno", getDogName(Dog("Bruno")))
     }
 
     @Test
