@@ -14,7 +14,7 @@ class Optionals {
 
     private fun letDogBark(dog: Dog?) {
 //      TODO TASK 1 call the function "bark" on the dog using the Safe Call Operator
-
+        throw NotImplementedError("Please implement the task :-)")
     }
 
     private fun getDogName(dog: Dog?): String {
