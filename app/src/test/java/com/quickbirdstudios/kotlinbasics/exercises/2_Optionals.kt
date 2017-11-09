@@ -24,14 +24,10 @@ class Optionals {
         throw NotImplementedError("Please implement the task :-)")
     }
 
-    //  TODO TASK 3 return the DOG NAME if it IS a dog. (HINT: use "as?"-cast or "is" check)
-    //  TODO TASK 3 if it is NOT a dog, return "type unknown"
     private fun getNameOf(any: Any): String {
+//      TODO TASK 3 return the DOG NAME if it IS a dog. (HINT: use "as?"-cast or "is" check)
+//      TODO TASK 3 if it is NOT a dog, return "type unknown"
         throw NotImplementedError("Please implement the task :-)")
-    }
-
-    private fun getNameOfSimplified(any: Any): String {
-        return (any as? Dog)?.name ?: "type unknown"
     }
 
     @Test
