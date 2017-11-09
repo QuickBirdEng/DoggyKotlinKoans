@@ -20,6 +20,7 @@ class VariablesAndFunctions {
 
     // TODO TASK 1 add two properties "name" and "type"(read-only)
     // TODO TASK 2 add a function "bark" with "times" argument which prints "wuff" multiple times
+    // HINT: Use the "repeat" function ("xxx".repeat(3))
     // TODO TAKS 3 add a function "introduce" which prints "Hey my name is <NAME>"
     private class Dog {
 

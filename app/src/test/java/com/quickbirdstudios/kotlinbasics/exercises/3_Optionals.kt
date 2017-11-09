@@ -1,6 +1,7 @@
 package com.quickbirdstudios.kotlinbasics.exercises
 
 import android.graphics.Rect
+import com.quickbirdstudios.kotlinbasics.Dog
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -12,16 +13,18 @@ class Optionals {
 
 
     private fun letDogBark(dog: Dog?) {
-//      TODO TASK 1 call the function "bark" on the dog
+//      TODO TASK 1 call the function "bark" on the dog using the Safe Call Operator
 
     }
 
-    private fun getDogIntroduction(dog: Dog?): String {
-//      TODO TASK 2 return a string with the dog name where he introduces himself using his "name". If the dog is null, use "NoNameDog" as the dog "name"
+    private fun getDogName(dog: Dog?): String {
+//      TODO TASK 2 return the DOG NAME if the dog is NOT null (HINT: use Elvis operator "?:" )
+//      TODO TASK 2 return "No dog found" if the dog IS null
         throw NotImplementedError("Please implement the task :-)")
     }
 
-    //  TODO TASK 3 return the "name" of the dog IF it is a dog. if it is not a dog, return "type unknown"
+    //  TODO TASK 3 return the DOG NAME if it IS a dog. (HINT: use "as?"-cast or "is" check)
+    //  TODO TASK 3 if it is NOT a dog, return "type unknown"
     private fun getNameOf(any: Any): String {
         throw NotImplementedError("Please implement the task :-)")
     }
@@ -37,12 +40,12 @@ class Optionals {
 
     @Test
     fun testDogGetsIntroducedCorrectlyWhenNull() {
-        assertEquals("My name is NoNameDog", getDogIntroduction(null))
+        assertEquals("No dog found", getDogName(null))
     }
 
     @Test
     fun testDogGetsIntroducedCorrectlyWhenNotNull() {
-        assertEquals("My name is Bruno", getDogIntroduction(Dog("Bruno")))
+        assertEquals("My name is Bruno", getDogName(Dog("Bruno")))
     }
 
     @Test

@@ -1,5 +1,6 @@
 package com.quickbirdstudios.kotlinbasics.exercises
 
+import com.quickbirdstudios.kotlinbasics.Dog
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -10,17 +11,17 @@ import org.junit.Test
 class Lambdas {
     private val dogs = listOf(Dog("Bruno", age = 4), Dog("Daisy", age = 12), Dog("Rex", age = 7))
 
-    // TODO TASK 1 find and return a list of the names of all dogs
+    // TODO TASK 1 find and return a list of the names of all dogs using "map"
     private fun findDogNames(): List<String> {
         throw NotImplementedError("Please implement the task :-)")
     }
 
-    // TODO TASK 2 find and return a list of all dogs that are older than 5 years
+    // TODO TASK 2 find and return a list of all dogs that are older than 5 years using "filter"
     private fun findOldDogs(): List<Dog> {
         throw NotImplementedError("Please implement the task :-)")
     }
 
-    // TODO TASK 3 COMBINE BOTH: find and return a list of the NAMES of all dogs that are older than 5
+    // TODO TASK 3 COMBINE FILTER AND MAP: find and return a list of the NAMES of all dogs that are OLDER THAN 5
     private fun findNamesOfOldDogs(): List<String> {
         throw NotImplementedError("Please implement the task :-)")
     }
