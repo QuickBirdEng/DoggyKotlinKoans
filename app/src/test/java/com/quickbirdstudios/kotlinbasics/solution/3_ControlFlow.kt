@@ -13,7 +13,11 @@ class ControlFlow {
     //  TODO -> if the name is "Ignatz", return the owner name "Peter"
     //  TODO -> otherwise return null
     fun findDogOwnerName(dog: Dog): String? {
-        throw NotImplementedError("Please implement the task :-)")
+        return when (dog.name) {
+            "Bruno" -> "Hans"
+            "Ignatz" -> "Peter"
+            else -> null
+        }
     }
 
     //  TODO TASK 2 using the "when" operator on the "dog.age", return:
@@ -22,14 +26,18 @@ class ControlFlow {
     //  HINT: use the range oprator "x..y" and "in" keyword
     //  TODO -> "Old Dog" otherwise
     fun ageToString(dog: Dog): String {
-        throw NotImplementedError("Please implement the task :-)")
+        return when (dog.age) {
+            0, 1 -> "Baby Dog"
+            in 2..8 -> "Normal Dog"
+            else -> "Old Dog"
+        }
     }
 
     @Test
     fun testOwnerNameIsCorrect() {
-        assertEquals("Baby Dog", ageToString(Dog("Bruno",age = 1)))
-        assertEquals("Normal Dog", ageToString(Dog("Ignatz",age = 5)))
-        assertEquals("Old Dog", ageToString(Dog("Balu",age = 13)))
+        assertEquals("Baby Dog", ageToString(Dog("Bruno", age = 1)))
+        assertEquals("Normal Dog", ageToString(Dog("Ignatz", age = 5)))
+        assertEquals("Old Dog", ageToString(Dog("Balu", age = 13)))
     }
 
     @Test
